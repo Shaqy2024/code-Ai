@@ -10,32 +10,9 @@ import './App.css'
 
 function App() {
   const [ count, setCount ] = useState(0)
-  const [ code, setCode ] = useState(` SHAKIB.AI.....!!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    `)
+  const [ code, setCode ] = useState(` function sum() {
+  return 1 + 1
+}`)
 
   const [ review, setReview ] = useState(``)
 
@@ -50,10 +27,7 @@ function App() {
 
   return (
     <>
-   
-    
       <main>
-      
         <div className="left">
           <div className="code">
             <Editor
@@ -64,12 +38,10 @@ function App() {
               style={{
                 fontFamily: '"Fira code", "Fira Mono", monospace',
                 fontSize: 16,
-                border: "none",
+                border: "1px solid #ddd",
                 borderRadius: "5px",
                 height: "100%",
-                width: "100%",
-                backgroundColor: "#f5f5f5",
-              
+                width: "100%"
               }}
             />
           </div>
